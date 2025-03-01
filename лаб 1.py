@@ -2,7 +2,11 @@ import doctest
 
 
 class Printer:
-    def init(self, brand: str, max_pages_per_minute: int):
+    """
+    ...
+    """
+    def __init__(self, brand: str, max_pages_per_minute: int):
+
         if max_pages_per_minute <= 0:
             raise ValueError("Максимальная скорость печати должна быть больше 0.")
         self.brand = brand
